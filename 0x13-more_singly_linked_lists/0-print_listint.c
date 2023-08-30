@@ -10,7 +10,7 @@ size_t print_listint(const listint_t *h)
 	size_t no_counter = 0;
 	int n;
 
-	while (h)
+	while (h != NULL)
 	{
 		printf("%d\n", h->n);
 		no_counter;
