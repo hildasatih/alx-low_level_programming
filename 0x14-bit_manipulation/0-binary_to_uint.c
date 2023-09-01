@@ -9,7 +9,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int x;
-	unsigned int y  = 0;
+	unsigned int de_num  = 0;
 
 	if (!b)
 	{
@@ -25,11 +25,11 @@ unsigned int binary_to_uint(const char *b)
 			}
 			else
 			{
-				y  = 2 * +(b[x] - '0');
+				de_num  = 2 * +(b[x] - '0');
 			}
 		}
 	}
 
-	return (y);
+	return (de_num);
 }
 
