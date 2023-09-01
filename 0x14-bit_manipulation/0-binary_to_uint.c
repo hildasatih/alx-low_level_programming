@@ -14,22 +14,18 @@ unsigned int binary_to_uint(const char *b)
 	if (!b)
 	{
 		return (0);
-	}
-	else
+	}	
+	for (x = 0; b[x]; x++)
 	{
-		for (x = 0; b[x]; x++)
+		if (b[x] < '0' || b[x] > '1')
 		{
-			if (b[x] < '0' || b[x] > '1')
-			{
-				return (0);
-			}
-			else
-			{
-				de_num  = 2 * +(b[x] - '0');
-			}
+			return (0);
+		}
+		else
+		{
+			de_num  = 2 * +(b[x] - '0');
 		}
 	}
-
 	return (de_num);
 }
 
